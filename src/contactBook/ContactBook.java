@@ -113,4 +113,14 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public boolean hasEqualPhone() {
+
+        if (counter > 0) {
+            for (int i = 0; i < counter; i++)
+                for (int j = i + 1; j < counter; j++)
+                    if (contacts[i].getPhone() == contacts[j].getPhone())
+                        return true;
+        }
+        return false;
+    }
 }
