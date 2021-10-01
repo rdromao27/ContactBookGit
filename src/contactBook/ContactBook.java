@@ -63,6 +63,7 @@ public class ContactBook {
         contacts[searchIndex(name)].setEmail(email);
     }
 
+    //Pre: phone != null && hasPhone(phone)
     public Contact searchContactWithNumber(int phone) {
         return contacts[searchPhone(phone)];
     }
